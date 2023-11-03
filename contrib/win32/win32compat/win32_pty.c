@@ -40,7 +40,7 @@ is_conpty_supported()
 {
 	wchar_t *kernel32_dll_path = L"kernel32.dll";
 	HMODULE hm_kernel32 = NULL;
-	static int isConpty = -1;
+	static int isConpty = 0;
 
 	if (isConpty != -1)
 		return isConpty;
